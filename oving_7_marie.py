@@ -9,6 +9,7 @@ def legg_til_nytt_emne():
         print("emne ftgjjgj")
         
 def legg_til_emne():
+
     
         
 while True:
