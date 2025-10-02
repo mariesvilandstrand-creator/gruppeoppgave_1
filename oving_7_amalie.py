@@ -7,12 +7,27 @@ def legg_til_nytt_emne():
     if semester==("vår"):
         print("emne ftgjjgj")
         
+def legg_til_emne():
+    
+        
 while True:
-    ip = input("Hva vil du gjøre?")
+    ip = input("Hva vil du gjøre?").lower().strip()
     match ip:
-        case "add":
+        case "1" | "ne":
             legg_til_nytt_emne()
-        case "avslutt":
+        case "2" | "lte":
+            legg_til_emne()
+        case "3" | "sul"
+            skriv_ut_liste()
+         case "4" | "sus"
+            skriv_ut_studieplan()
+        case "5" | "stg":
+            sjekk_studieplan_gyldig()
+        case "6" | "lesf":
+            lagre_emne_studieplan_fil()
+        case "7" | "lin":
+            les_inn()
+        case "8" | "abort":
             break
         case _:
             print("ugyldig commando:", ip)
