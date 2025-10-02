@@ -1,2 +1,1 @@
-print("Hei hei")
-print("slay")
+#oppgave 1: lag et nytt emne.
