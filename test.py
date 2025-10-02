@@ -1,2 +1,2 @@
 def hei():
-    print("hei")
+    print("heipådegh")
