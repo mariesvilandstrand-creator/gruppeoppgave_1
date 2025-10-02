@@ -20,7 +20,7 @@ while True:
             legg_til_emne()
         case "3" | "sul"
             skriv_ut_liste()
-         case "4" | "sus"
+        case "4" | "sus"
             skriv_ut_studieplan()
         case "5" | "stg":
             sjekk_studieplan_gyldig()
