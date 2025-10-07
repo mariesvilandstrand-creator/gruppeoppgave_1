@@ -20,8 +20,6 @@ if semester=="host":
     semester_liste.append("host")
 if semester=="vaar":
     semester_liste.append("vaar")
-else:
-    print("ikke gyldig")
 
 
 print("hei")
