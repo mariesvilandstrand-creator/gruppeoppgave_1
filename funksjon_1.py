@@ -4,3 +4,5 @@
 #listene representerer samme emne
 
 print("Funker det med git push i terminalen")
+
+print("Funker det nå mvh Marie")
