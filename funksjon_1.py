@@ -12,7 +12,7 @@ emnekode_liste=[]
 emnekode=input("Hva er emnekoden?")
 
 
-semester=input("Er det på høst eller vår? host/vaar: ").lower()
+semester=input("Er det på høst eller vår? host/vaar").lower()
 while semester!= "host" and semester!= "vaar":
     print("IKKE GYLDIG. husk å skrive host eller vaar")
     semester=input("Er det på høst eller vår?")
