@@ -9,14 +9,19 @@ print("Linje en")
 
 print("Test 2")
 
-heiiiiiiiikiji
+semester_liste=[]
+
 
 emnekode=input("Hva er emnekoden?")
 
 semester=input("Er det på høst eller vår? host/vaar").lower()
-if semester==host:
+while semester!= "host" and semester!= "vaar":
+    print("IKKE GYLDIG. husk å skrive host eller vaar")
+    semester=input("Er det på høst eller vår?")
+if semester=="host":
     semester_liste.append("host")
-if semester==vaar:
+if semester=="vaar":
     semester_liste.append("vaar")
 else:
     print("ikke gyldig")
+    
