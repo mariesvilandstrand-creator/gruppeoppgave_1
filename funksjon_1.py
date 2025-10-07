@@ -4,3 +4,7 @@
 #listene representerer samme emne
 
 print("For noe styr mvh. Aleksander")
+
+print("Linje en")
+
+print("Test 2")
