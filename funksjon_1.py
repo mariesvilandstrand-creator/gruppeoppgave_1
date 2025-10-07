@@ -10,7 +10,7 @@ semester_liste=[]
 emnekode_liste=[]
 liste=[]
 emnekode=input("Hva er emnekoden?")
-
+while emnekode = 8:
 
 semester=input("Er det på høst eller vår? host/vaar: ").lower()
 while semester!= "host" and semester!= "vaar":
