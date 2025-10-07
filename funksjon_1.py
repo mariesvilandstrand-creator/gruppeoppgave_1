@@ -24,6 +24,7 @@ if semester=="host":
 if semester=="vaar":
     semester_liste.append("vaar")
 
+
 studiepoeng=input("Hvor mange studiepoeng?")
 while studiepoeng>60 or studiepoeng<5:
     print("Ugyldig poengsum, prøv igjen")
