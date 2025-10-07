@@ -3,4 +3,4 @@
 #semester (høst eller vår) og en for antall studiepoeng, og hvor samme indeks i de tre
 #listene representerer samme emne
 
-print("Hvorfor funker det ikke!!")
+print("Funker det med git push i terminalen")
