@@ -8,6 +8,7 @@
 
 semester_liste=[]
 emnekode_liste=[]
+studiepoeng_liste=[]
 liste=[]
 emnekode=input("Hva er emnekoden?")
 while len(emnekode) > 6 and len(emnekode)<6:
@@ -22,4 +23,10 @@ if semester=="host":
     semester_liste.append("host")
 if semester=="vaar":
     semester_liste.append("vaar")
+
+studiepoeng=input("Hvor mange studiepoeng?")
+while studiepoeng>60 or studiepoeng<5:
+    print("Ugyldig poengsum, prøv igjen")
+    studiepoeng=input("Hvor mange studiepoeng?")
+studiepoeng_liste.append(studiepoeng)
 
