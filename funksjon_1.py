@@ -9,4 +9,6 @@ print("Linje en")
 
 print("Test 2")
 
-heiiiiiiii
+heiiiii
+iii
+kiji
