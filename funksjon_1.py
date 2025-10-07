@@ -9,7 +9,8 @@
 semester_liste=[]
 emnekode_liste=[]
 studiepoeng_liste=[]
-liste=[]
+
+
 emnekode=input("Hva er emnekoden?")
 while len(emnekode) > 6 and len(emnekode)<6:
     emnekode=input("Hva er emnekoden?")
