@@ -7,6 +7,7 @@
 
 
 semester_liste=[]
+emnekode_liste=[]
 
 emnekode=input("Hva er emnekoden?")
 
