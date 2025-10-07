@@ -3,5 +3,4 @@
 #semester (høst eller vår) og en for antall studiepoeng, og hvor samme indeks i de tre
 #listene representerer samme emne
 
-
-Hei og ho
+print("Hvorfor funker det ikke!!")
