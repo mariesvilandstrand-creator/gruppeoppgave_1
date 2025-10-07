@@ -13,7 +13,6 @@ def legg_til_nytt_emne():
 def legg_til_emne():
     print("....")
 
-
 def skriv_ut_liste():
     print("...")
 
