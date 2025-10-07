@@ -1,0 +1,1 @@
+#Skriv ut studieplanen med hvilke emner som er i hvert semester
