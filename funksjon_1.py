@@ -12,6 +12,7 @@ liste=[]
 emnekode=input("Hva er emnekoden?")
 while len(emnekode) > 6 and len(emnekode)<6:
     emnekode=input("Hva er emnekoden?")
+emnekode_liste.append(emnekode)
 
 semester=input("Er det på høst eller vår? host/vaar: ").lower()
 while semester!= "host" and semester!= "vaar":
