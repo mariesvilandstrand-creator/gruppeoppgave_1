@@ -18,6 +18,8 @@ heiiiiiiiikiji
 <<<<<<< HEAD
 >>>>>>> ba605444439ec542a7dc90a0c99d9f9456f9a816
 
+print("Funk pls")
+
 print("Har ikke peiling om det funker")
 =======
 
