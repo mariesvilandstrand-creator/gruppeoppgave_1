@@ -24,3 +24,4 @@ else:
     print("ikke gyldig")
 
 
+print("hei")
