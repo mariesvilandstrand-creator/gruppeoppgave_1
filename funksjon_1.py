@@ -3,14 +3,10 @@
 #semester (høst eller vår) og en for antall studiepoeng, og hvor samme indeks i de tre
 #listene representerer samme emne
 
-print("For noe styr mvh. Aleksander")
 
-print("Linje en")
 
-print("Test 2")
 
 semester_liste=[]
-
 
 emnekode=input("Hva er emnekoden?")
 
@@ -24,4 +20,3 @@ if semester=="vaar":
     semester_liste.append("vaar")
 else:
     print("ikke gyldig")
-    
