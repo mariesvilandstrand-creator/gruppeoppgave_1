@@ -8,7 +8,7 @@
 
 semester_liste=[]
 emnekode_liste=[]
-
+liste=[]
 emnekode=input("Hva er emnekoden?")
 
 
@@ -22,3 +22,5 @@ if semester=="vaar":
     semester_liste.append("vaar")
 else:
     print("ikke gyldig")
+
+
