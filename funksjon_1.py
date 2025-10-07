@@ -10,25 +10,22 @@ semester_liste=[]
 emnekode_liste=[]
 studiepoeng_liste=[]
 
-
-emnekode=input("Hva er emnekoden?")
-while len(emnekode) > 6 and len(emnekode)<6:
+def legg_til_nytt_emne:
     emnekode=input("Hva er emnekoden?")
-emnekode_liste.append(emnekode)
-
-semester=input("Er det på høst eller vår? host/vaar: ").lower()
-while semester!= "host" and semester!= "vaar":
-    print("IKKE GYLDIG. husk å skrive host eller vaar")
-    semester=input("Er det på høst eller vår?")
-if semester=="host":
-    semester_liste.append("host")
-if semester=="vaar":
-    semester_liste.append("vaar")
-
-
-studiepoeng=int(input("Hvor mange studiepoeng?"))
-while studiepoeng>60 or studiepoeng<5:
-    print("Ugyldig poengsum, prøv igjen")
+    while len(emnekode) > 6 and len(emnekode)<6:
+        emnekode=input("Hva er emnekoden?")
+    emnekode_liste.append(emnekode)
+    semester=input("Er det på høst eller vår? host/vaar: ").lower()
+    while semester!= "host" and semester!= "vaar":
+        print("IKKE GYLDIG. husk å skrive host eller vaar")
+        semester=input("Er det på høst eller vår?")
+    if semester=="host":
+        semester_liste.append("host")
+    if semester=="vaar":
+        semester_liste.append("vaar")
     studiepoeng=int(input("Hvor mange studiepoeng?"))
-studiepoeng_liste.append(studiepoeng)
-print("du er gudd")
+    while studiepoeng>60 or studiepoeng<5:
+        print("Ugyldig poengsum, prøv igjen")
+        studiepoeng=int(input("Hvor mange studiepoeng?"))
+    studiepoeng_liste.append(studiepoeng)
+    print("du er gudd")
