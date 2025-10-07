@@ -15,6 +15,19 @@ print("Linje en")
 print("Test 2")
 
 heiiiiiiiikiji
+<<<<<<< HEAD
 >>>>>>> ba605444439ec542a7dc90a0c99d9f9456f9a816
 
 print("Har ikke peiling om det funker")
+=======
+
+emnekode=input("Hva er emnekoden?")
+
+semester=input("Er det på høst eller vår? host/vaar").lower()
+if semester==host:
+    semester_liste.append("host")
+if semester==vaar:
+    semester_liste.append("vaar")
+else:
+    print("ikke gyldig")
+>>>>>>> a48b36204f8c20b2eed188b7f4b6ddf0b3332bf6
