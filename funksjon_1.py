@@ -22,6 +22,3 @@ if semester=="vaar":
     semester_liste.append("vaar")
 else:
     print("ikke gyldig")
-
-
-print("hei")
