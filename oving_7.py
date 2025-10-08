@@ -44,8 +44,6 @@ while True:
         case _:
             print("ugyldig commando:", ip)
 
-emnekode=input("hva er emnekoden?")
-
     
 
 emnekode_liste=[]
