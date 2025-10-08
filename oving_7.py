@@ -4,13 +4,13 @@
 #listene representerer samme emne
 
 
-
+from funksjon_1 import*
 def legg_til_nytt_emne():
     semester=input("Er det vår elller høst").lower().strip()
     if semester==("vår"):
         print("emne ftgjjgj")
         
-def legg_til_emne():
+def legg_til_nytt_emne():
     print("....")
 
 def skriv_ut_liste():
