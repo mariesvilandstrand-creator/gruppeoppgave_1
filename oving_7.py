@@ -9,7 +9,10 @@ from funksjon_1 import*
 semester_liste=[]
 emnekode_liste=[]
 studiepoeng_liste=[]
+
         
+def legg_til_nytt_emne():
+    print("....")
 
 def skriv_ut_liste():
     print("...")
