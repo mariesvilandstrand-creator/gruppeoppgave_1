@@ -10,3 +10,7 @@
 #6.
 #o Sjekk at det er plass i semesteret til emnet. Et semester skal inneholder
 #maksimalt 30 studiepoeng med emner
+
+
+def legg_til_emne():
+    print("....")
