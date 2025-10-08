@@ -14,3 +14,14 @@
 
 def legg_til_emne_i_studieplan(emnekode_liste):
     print(emnekode_liste)
+    while True:
+        try:
+            hvilket_emne=int(input("Hvilket emne vil du legge inn i studieplanen din?(skriv inn tallet i rekken som emnet ditt er i): "))-1
+            if hvilket_emne>len(emnekode_liste):
+                print("feil")
+                continue
+            break
+        except ValueError:
+            print("FEIL")
+
+    emnekode_liste[hvilket_emne]
