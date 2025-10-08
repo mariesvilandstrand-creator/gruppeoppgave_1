@@ -28,4 +28,3 @@ def legg_til_nytt_emne():
         print("Ugyldig poengsum, prøv igjen")
         studiepoeng=int(input("Hvor mange studiepoeng?"))
     studiepoeng_liste.append(studiepoeng)
-    print("du er gudd")
