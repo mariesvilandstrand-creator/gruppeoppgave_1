@@ -13,4 +13,4 @@
 
 
 def legg_til_emne():
-    print("....")
+    print

@@ -5,6 +5,10 @@
 
 
 from funksjon_1 import*
+
+semester_liste=[]
+emnekode_liste=[]
+studiepoeng_liste=[]
         
 
 def skriv_ut_liste():
@@ -28,7 +32,7 @@ while True:
         case "1" | "ne":
             legg_til_nytt_emne()
         case "2" | "lte":
-            legg_til_emne()
+            legg_til_emne_i_studieplan()
         case "3" | "sul":
             skriv_ut_liste()
         case "4" | "sus":

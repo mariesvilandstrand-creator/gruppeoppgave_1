@@ -6,10 +6,6 @@
 
 
 
-semester_liste=[]
-emnekode_liste=[]
-studiepoeng_liste=[]
-
 def legg_til_nytt_emne():
     emnekode=input("Hva er emnekoden?")
     while len(emnekode) > 6 and len(emnekode)<6:
