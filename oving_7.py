@@ -5,10 +5,7 @@
 
 
 from funksjon_1 import*
-def legg_til_nytt_emne():
-    semester=input("Er det vår elller høst").lower().strip()
-    if semester==("vår"):
-        print("emne ftgjjgj")
+
         
 def legg_til_nytt_emne():
     print("....")
