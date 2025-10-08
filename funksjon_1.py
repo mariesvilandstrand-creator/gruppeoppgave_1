@@ -6,7 +6,7 @@
 
 
 
-def legg_til_nytt_emne():
+def legg_til_nytt_emne(emnekode_liste, semester_liste, studiepoeng_liste):
     emnekode=input("Hva er emnekoden?")
     while len(emnekode) > 6 and len(emnekode)<6:
         emnekode=input("Hva er emnekoden?")

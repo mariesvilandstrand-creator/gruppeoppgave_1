@@ -12,5 +12,5 @@
 #maksimalt 30 studiepoeng med emner
 
 
-def legg_til_emne():
-    print
+def legg_til_emne_i_studieplan(emnekode_liste):
+    print(emnekode_liste)
