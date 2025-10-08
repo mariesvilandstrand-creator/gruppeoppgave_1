@@ -12,7 +12,7 @@
 #maksimalt 30 studiepoeng med emner
 
 
-def legg_til_emne_i_studieplan(emnekode_liste):
+def legg_til_emne_i_studieplan(emnekode_liste, semester_liste, studiepoeng_liste):
     print(emnekode_liste)
     while True:
         try:
@@ -25,3 +25,5 @@ def legg_til_emne_i_studieplan(emnekode_liste):
             print("FEIL")
 
     emnekode_liste[hvilket_emne]
+    
+    semester_liste[hvilket_emne]
