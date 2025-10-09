@@ -25,17 +25,19 @@ def funksjon_2_ny(studieplan_liste, semester_liste, emnekode_liste, studiepoeng_
     hvilket_semester=semester_liste[hvilket_emne]-1
     studieplan_liste[hvilket_semester].append(emnekode_liste[hvilket_emne])
     studiepoeng_sum[hvilket_semester].append(studiepoeng_liste[hvilket_emne])
+    
+    for i in range(len(studieplan_liste[hvilket_semester])):
+        if studieplan_liste[i][hvilket_semester]==emnekode_liste[hvilket_emne]:
+            print("Du har allerede dette emnet i studieplanen din!")
+            studieplan_liste[hvilket_semester].remove(emnekode_liste[hvilket_emne])
+            studiepoeng_sum[hvilket_semester].remove(studiepoeng_liste[hvilket_emne])
+            i=i+1
+                
     if sum(studiepoeng_sum[hvilket_semester])>30:
         print("Du har lagt til for mange studiepoeng! Jeg fjerner de fra listen")
         studieplan_liste[hvilket_semester].remove(emnekode_liste[hvilket_emne])
         studiepoeng_sum[hvilket_semester].remove(studiepoeng_liste[hvilket_emne])
     else:
         print(f"Dette er din foreløpige studieplan: {studieplan_liste}")
-    t=0
-    for i in range(len(studieplan_liste[hvilket_semester])):
-        if studieplan_liste[i][hvilket_semester]==emnekode_liste[hvilket_emne]:
-            print("Du har allerede dette emnet i studieplanen din!")
-            studieplan_liste[hvilket_semester].remove(emnekode_liste[hvilket_emne])
-            studiepoeng_sum[hvilket_semester].remove(studiepoeng_liste[hvilket_emne])
-                
+
     
