@@ -25,6 +25,9 @@ def funksjon_2_ny(studieplan_liste, semester_liste, emnekode_liste, studiepoeng_
     hvilket_semester=semester_liste[hvilket_emne]-1
     
     for i in range(len(studieplan_liste[hvilket_semester])):
+        print(len(studieplan_liste[i]),hvilket_semester)
+        if len(studieplan_liste[i]) == 0:
+            continue
         if studieplan_liste[i][hvilket_semester]==emnekode_liste[hvilket_emne]:
             print("Du har allerede dette emnet i studieplanen din!")
             return
