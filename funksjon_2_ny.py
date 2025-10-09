@@ -22,7 +22,7 @@ def funksjon_2_ny(studieplan_liste, semester_liste, emnekode_liste, studiepoeng_
             break
         except ValueError:
             print("FEIL")
-    hvilket_semester=semester_liste[hvilket_emne]
+    hvilket_semester=semester_liste[hvilket_emne]-1
     studieplan_liste[hvilket_semester].append(emnekode_liste[hvilket_emne])
     studiepoeng_sum[hvilket_semester].append(studiepoeng_liste[hvilket_emne])
     if sum(studiepoeng_sum[hvilket_semester])>30:
