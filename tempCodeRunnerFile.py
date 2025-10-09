@@ -1,2 +1,58 @@
+#Lag et nytt emne: Et emne skal ha minimum en emnekode, om emnet undervises høst
+#eller vår, og antall studiepoeng. Dere kan lagre dette i tre lister, en for emnekoder, en for
+#semester (høst eller vår) og en for antall studiepoeng, og hvor samme indeks i de tre
+#listene representerer samme emne
+
+
 from funksjon_1 import*
-def legg_til_nytt_emne():
+
+from funksjon_2_ny import*
+
+semester_liste=[]
+emnekode_liste=[]
+studiepoeng_liste=[]
+aarstid_liste=[]
+studieplan_liste=[[],[],[],[],[],[]]
+studiepoeng_sum=[[],[],[],[],[],[]]
+
+
+        
+
+def skriv_ut_liste():
+    print("...")
+
+def skriv_ut_studieplan():
+    print("...")
+
+def sjekk_studieplan_gyldig():
+    print("...")
+
+def lagre_emne_studieplan_fil():
+    print("...")
+
+def les_inn():
+    print("...")
+        
+while True:
+    ip = input("Hva vil du gjøre?").lower().strip()
+    match ip:
+        case "1" | "ne":
+            legg_til_nytt_emne(emnekode_liste, semester_liste, studiepoeng_liste, aarstid_liste)
+        case "2" | "lte":
+            legg_til_emne_i_studieplan(emnekode_liste, semester_liste, studiepoeng_liste,studieplan_liste,studiepoeng_sum)
+        case "3" | "sul":
+            skriv_ut_liste()
+        case "4" | "sus":
+            skriv_ut_studieplan()
+        case "5" | "stg":
+            sjekk_studieplan_gyldig()
+        case "6" | "lesf":
+            lagre_emne_studieplan_fil()
+        case "7" | "lin":
+            les_inn()
+        case "8" | "abort":
+            break
+        case _:
+            print("ugyldig commando:", ip)
+
+print(emnekode_liste)

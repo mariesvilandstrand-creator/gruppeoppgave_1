@@ -15,19 +15,20 @@ def funksjon_2_ny(studieplan_liste, semester_liste, emnekode_liste, studiepoeng_
     print(emnekode_liste)
     while True:
         try:
-            hvilket_emne=int(input("Hvilket emne vil du legge inn i studieplanen din?(skriv inn tallet i rekken som emnet ditt er i): "))-1
+            hvilket_emne=int(input("Hvilket emne vil du legge inn i studieplanen din?(skriv inn tallet i rekken som emnet ditt er i): "))
+            x=hvilket_emne-1
             if hvilket_emne>len(emnekode_liste):
                 print("feil")
                 continue
             break
         except ValueError:
             print("FEIL")
-    hvilket_semester=semester_liste[hvilket_emne]
-    studieplan_liste[hvilket_semester].append(emnekode_liste[hvilket_emne])
-    studiepoeng_sum[hvilket_semester].append(studiepoeng_liste[hvilket_emne])
+    hvilket_semester=semester_liste[x]
+    studieplan_liste[hvilket_semester].append(emnekode_liste[x])
+    studiepoeng_sum[hvilket_semester].append(studiepoeng_liste[x])
     if sum(studiepoeng_sum[hvilket_semester])>60:
         print("Du har lagt til for mange studiepoeng! Jeg fjerner de fra listen")
-        studieplan_liste[hvilket_semester].remove(emnekode_liste[hvilket_emne])
-        studiepoeng_sum[hvilket_semester].remove(studiepoeng_liste[hvilket_emne])
+        studieplan_liste[hvilket_semester].remove(emnekode_liste[x])
+        studiepoeng_sum[hvilket_semester].remove(studiepoeng_liste[x])
     else:
         print(f"Dette er din foreløpige studieplan: {studieplan_liste}")

@@ -39,7 +39,7 @@ while True:
         case "1" | "ne":
             legg_til_nytt_emne(emnekode_liste, semester_liste, studiepoeng_liste, aarstid_liste)
         case "2" | "lte":
-            funksjon_2_ny(studieplan_liste, emnekode_liste, studiepoeng_sum, studiepoeng_liste)
+            funksjon_2_ny(studieplan_liste, semester_liste, emnekode_liste, studiepoeng_sum, studiepoeng_liste)
         case "3" | "sul":
             skriv_ut_liste()
         case "4" | "sus":
