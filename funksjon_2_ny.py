@@ -11,7 +11,7 @@
 #o Sjekk at det er plass i semesteret til emnet. Et semester skal inneholder
 #maksimalt 30 studiepoeng med emner
 
-def funksjon_2_ny(studieplan_liste, emnekode_liste, studiepoeng_sum, studiepoeng_liste):
+def funksjon_2_ny(studieplan_liste, semester_liste, emnekode_liste, studiepoeng_sum, studiepoeng_liste):
     print(emnekode_liste)
     while True:
         try:
@@ -22,14 +22,9 @@ def funksjon_2_ny(studieplan_liste, emnekode_liste, studiepoeng_sum, studiepoeng
             break
         except ValueError:
             print("FEIL")
-    hvilket_semester=int(input("Hvilket semester vil du legge det inn i?"))-1
-    for emne_i in range(len(studieplan_liste[hvilket_semester])):
-        if studieplan_liste[hvilket_semester][emne_i]==hvilket_emne:
-            print("Du har allerede denne i studieplanen din")
-        else:
-            print("Den har nå blitt lagt inn i studieplanen din!")
-            studieplan_liste[hvilket_semester].append(emnekode_liste[hvilket_emne])
-            studiepoeng_sum[hvilket_semester].append(studiepoeng_liste[hvilket_emne])
+    hvilket_semester=semester_liste[hvilket_emne]
+    studieplan_liste[hvilket_semester].append(emnekode_liste[hvilket_emne])
+    studiepoeng_sum[hvilket_semester].append(studiepoeng_liste[hvilket_emne])
     if sum(studiepoeng_sum[hvilket_semester])>60:
         print("Du har lagt til for mange studiepoeng! Jeg fjerner de fra listen")
         studieplan_liste[hvilket_semester].remove(emnekode_liste[hvilket_emne])
