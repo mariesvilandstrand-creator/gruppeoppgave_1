@@ -28,6 +28,7 @@ def legg_til_emne_i_studieplan(emnekode_liste, semester_liste, studiepoeng_liste
     
     semester_liste[hvilket_emne]
     
+
     
     for semester in ["host", "vaar"]:
         for emne_i in range(len(emnekode_liste)):

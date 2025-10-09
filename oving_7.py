@@ -11,6 +11,9 @@ from funksjon_2 import*
 semester_liste=[]
 emnekode_liste=[]
 studiepoeng_liste=[]
+aarstid_liste=[]
+semesterplan_vaar=[]
+semesterplan_host=[]
 
         
 
@@ -33,9 +36,9 @@ while True:
     ip = input("Hva vil du gjøre?").lower().strip()
     match ip:
         case "1" | "ne":
-            legg_til_nytt_emne(emnekode_liste, semester_liste, studiepoeng_liste)
+            legg_til_nytt_emne(emnekode_liste, semester_liste, studiepoeng_liste, aarstid_liste)
         case "2" | "lte":
-            legg_til_emne_i_studieplan(emnekode_liste)
+            legg_til_emne_i_studieplan(emnekode_liste, semester_liste, studiepoeng_liste)
         case "3" | "sul":
             skriv_ut_liste()
         case "4" | "sus":
@@ -51,10 +54,3 @@ while True:
         case _:
             print("ugyldig commando:", ip)
 
-    
-
-emnekode_liste=[]
-
-semester_liste=[]
-
-antall_studiepoeng=[]
