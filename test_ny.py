@@ -41,7 +41,7 @@ while True:
         case "2" | "lte":
             funksjon_2_ny(studieplan_liste, semester_liste, emnekode_liste, studiepoeng_sum, studiepoeng_liste)
         case "3" | "sul":
-            def skriv_ut_liste(emnekode_liste, semester_liste, studiepoeng_liste)
+            skriv_ut_liste(emnekode_liste, semester_liste, studiepoeng_liste)
         case "4" | "sus":
             skriv_ut_studieplan()
         case "5" | "stg":
