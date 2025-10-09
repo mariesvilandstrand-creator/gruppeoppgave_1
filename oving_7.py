@@ -54,3 +54,4 @@ while True:
         case _:
             print("ugyldig commando:", ip)
 
+print(emnekode_liste)

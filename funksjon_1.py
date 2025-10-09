@@ -16,14 +16,10 @@ def legg_til_nytt_emne(emnekode_liste, semester_liste, studiepoeng_liste, aarsti
         print("FEIL")
         semester=int(input("Hvilket semester er det?"))
     semester_liste.append(semester)
-    aarstid=input("Er det på høst eller vår? host/vaar: ").lower()
-    while aarstid!= "host" and aarstid!= "vaar":
-        print("IKKE GYLDIG. husk å skrive host eller vaar")
-        aarstid=input("Er det på høst eller vår?")
-    if aarstid=="host":
-        aarstid_liste.append("host")
-    if aarstid=="vaar":
-        aarstid.append("vaar")
+    if semester in [2,4,6]:
+        aarstid_liste.append("vår")
+    else:
+        aarstid_liste.append("høst")
     studiepoeng=int(input("Hvor mange studiepoeng?"))
     while studiepoeng>60 or studiepoeng<5:
         print("Ugyldig poengsum, prøv igjen")

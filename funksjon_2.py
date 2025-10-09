@@ -23,8 +23,7 @@ def legg_til_emne_i_studieplan(emnekode_liste, semester_liste, studiepoeng_liste
             break
         except ValueError:
             print("FEIL")
-
-    emnekode_liste[hvilket_emne]
+    studiepoeng_liste.append(emnekode_liste[hvilket_emne])
     
     semester_liste[hvilket_emne]
     
