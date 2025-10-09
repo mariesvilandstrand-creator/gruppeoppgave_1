@@ -23,10 +23,14 @@ def legg_til_emne_i_studieplan(emnekode_liste, semester_liste, studiepoeng_liste
             break
         except ValueError:
             print("FEIL")
-    hvilket_semester=semester_liste[hvilket_emne]-1
+    hvilket_semester=semester_liste[hvilket_emne]
     studieplan_liste[hvilket_semester].append(emnekode_liste[hvilket_emne])
     studiepoeng_sum[hvilket_semester].append(studiepoeng_liste[hvilket_emne])
-    liste=int(input("Hvilket semester vil du printe ut?"))
+    
+    
+    liste=int(input("Hvilket semester vil du printe ut?"))-1
+    
+    
     print(studieplan_liste[liste])
     print(studiepoeng_sum[liste])
     print(f"du har {sum(studiepoeng_sum[hvilket_emne])} studiepoeng i semesteret ditt")
