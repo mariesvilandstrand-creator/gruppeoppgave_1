@@ -24,7 +24,7 @@ def funksjon_2_ny(studieplan_liste, emnekode_liste, studiepoeng_sum, studiepoeng
             print("FEIL")
     hvilket_semester=int(input("Hvilket semester vil du legge det inn i?"))-1
     for emne_i in range(len(studieplan_liste[hvilket_semester])):
-        if studieplan_liste[emne_i][hvilket_semester]==hvilket_emne:
+        if studieplan_liste[hvilket_semester][emne_i]==hvilket_emne:
             print("Du har allerede denne i studieplanen din")
         else:
             print("Den har nå blitt lagt inn i studieplanen din!")
