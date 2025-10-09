@@ -12,8 +12,13 @@ semester_liste=[]
 emnekode_liste=[]
 studiepoeng_liste=[]
 aarstid_liste=[]
-semesterplan_vaar=[]
-semesterplan_host=[]
+semester_1=[]
+semester_2=[]
+semester_3=[]
+semester_4=[]
+semester_5=[]
+semester_6=[]
+
 
         
 
