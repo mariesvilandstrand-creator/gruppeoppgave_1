@@ -26,6 +26,7 @@ def legg_til_emne_i_studieplan(emnekode_liste, semester_liste, studiepoeng_liste
     hvilket_semester=semester_liste[hvilket_emne]
     studieplan_liste[hvilket_semester].append(emnekode_liste[hvilket_emne])
     studiepoeng_sum[hvilket_semester].append(studiepoeng_liste[hvilket_emne])
-    liste=int(input("Hvilket semester vil du printe ut?")-1)
+    liste=int(input("Hvilket semester vil du printe ut?"))-1
     print(studieplan_liste[liste])
     print(studiepoeng_sum[liste])
+    print(f"du har {sum(studiepoeng_sum[hvilket_emne])} i semesteret ditt")
