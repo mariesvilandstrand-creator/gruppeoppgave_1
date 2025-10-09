@@ -8,6 +8,8 @@ from funksjon_1 import*
 
 from funksjon_2_ny import*
 
+from funksjon_3 import*
+
 semester_liste=[]
 emnekode_liste=[]
 studiepoeng_liste=[]
