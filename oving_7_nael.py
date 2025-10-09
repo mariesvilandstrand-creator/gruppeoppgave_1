@@ -1,5 +1,4 @@
-print("gg")
 
-from test import hei
 
-hei()
+hei_liste=[1,2,3,4]
+print(hei_liste)
