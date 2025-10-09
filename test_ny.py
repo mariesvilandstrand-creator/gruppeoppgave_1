@@ -10,6 +10,8 @@ from funksjon_2_ny import*
 
 from funksjon_3 import*
 
+from funksjon_4 import*
+
 semester_liste=[]
 emnekode_liste=[]
 studiepoeng_liste=[]
@@ -19,10 +21,6 @@ studiepoeng_sum=[[],[],[],[],[],[]]
 
 
         
-
-
-def skriv_ut_studieplan():
-    print("...")
 
 def sjekk_studieplan_gyldig():
     print("...")
@@ -43,7 +41,7 @@ while True:
         case "3" | "sul":
             skriv_ut_liste(emnekode_liste, semester_liste, studiepoeng_liste)
         case "4" | "sus":
-            skriv_ut_studieplan()
+            skriv_ut_studieplan(studieplan_liste)
         case "5" | "stg":
             sjekk_studieplan_gyldig()
         case "6" | "lesf":

@@ -1,9 +1,8 @@
 #Skriv ut studieplanen med hvilke emner som er i hvert semester
 
-hei=input("tototto")
-while len(hei)>6 and len(hei)<6:
-    print("FEIL")
-    hei=input("titititi")
-    
-def skriv_ut_studieplan():
-    print("...")
+
+t=1
+def skriv_ut_studieplan(studieplan_liste):
+    for i in range(len(studieplan_liste)):
+        print(f"Semester {t} = {studieplan_liste[i]}")
+        t=t+1
