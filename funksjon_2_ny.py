@@ -24,15 +24,10 @@ def funksjon_2_ny(studieplan_liste, semester_liste, emnekode_liste, studiepoeng_
             print("FEIL")
     hvilket_semester=semester_liste[hvilket_emne]-1
     
-    existere = False
     for i in range(len(studieplan_liste[hvilket_semester])):
         if studieplan_liste[i][hvilket_semester]==emnekode_liste[hvilket_emne]:
-            existere = True
             print("Du har allerede dette emnet i studieplanen din!")
-            break
-        
-    if existere == True:
-        return
+            return
     
     studieplan_liste[hvilket_semester].append(emnekode_liste[hvilket_emne])
     studiepoeng_sum[hvilket_semester].append(studiepoeng_liste[hvilket_emne])
