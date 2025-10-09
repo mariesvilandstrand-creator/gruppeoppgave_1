@@ -12,7 +12,7 @@
 #maksimalt 30 studiepoeng med emner
 
 
-def legg_til_emne_i_studieplan(emnekode_liste, semester_liste, studiepoeng_liste):
+def legg_til_emne_i_studieplan(emnekode_liste, semester_liste, studiepoeng_liste, studieplan_liste, studiepoeng_sum):
     print(emnekode_liste)
     while True:
         try:
@@ -23,10 +23,9 @@ def legg_til_emne_i_studieplan(emnekode_liste, semester_liste, studiepoeng_liste
             break
         except ValueError:
             print("FEIL")
-    
-
-    
-    for semester in ["host", "vaar"]:
-        for emne_i in range(len(emnekode_liste)):
-            if semester_liste[emne_i] == semester:
-                print(emnekode_liste[emne_i])
+    hvilket_semester=semester_liste[hvilket_emne]
+    studieplan_liste[hvilket_semester].append(emnekode_liste[hvilket_emne])
+    studiepoeng_sum[hvilket_semester].append(studiepoeng_liste[hvilket_emne])
+    liste=int(input("Hvilket semester vil du printe ut?"))
+    print(studieplan_liste[liste])
+    print(studiepoeng_sum[liste])

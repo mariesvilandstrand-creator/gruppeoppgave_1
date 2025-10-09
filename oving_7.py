@@ -12,12 +12,8 @@ semester_liste=[]
 emnekode_liste=[]
 studiepoeng_liste=[]
 aarstid_liste=[]
-semester_1=[]
-semester_2=[]
-semester_3=[]
-semester_4=[]
-semester_5=[]
-semester_6=[]
+studieplan_liste=[[],[],[],[],[],[]]
+studiepoeng_sum=[[],[],[],[],[],[]]
 
 
         
@@ -43,7 +39,7 @@ while True:
         case "1" | "ne":
             legg_til_nytt_emne(emnekode_liste, semester_liste, studiepoeng_liste, aarstid_liste)
         case "2" | "lte":
-            legg_til_emne_i_studieplan(emnekode_liste, semester_liste, studiepoeng_liste)
+            legg_til_emne_i_studieplan(emnekode_liste, semester_liste, studiepoeng_liste,studieplan_liste,studiepoeng_sum)
         case "3" | "sul":
             skriv_ut_liste()
         case "4" | "sus":
