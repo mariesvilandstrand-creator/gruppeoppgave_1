@@ -5,8 +5,6 @@
 def skriv_ut_studieplan(studieplan_liste):
     t=1
     for i in range(len(studieplan_liste)):
-        emner = ""
-        for emne in studieplan_liste[i]:
-            emner += f"{emne}, "
+        emner = ", ".join(studieplan_liste[i])
         print(f"Semester {t} = {emner}")
         t=t+1
