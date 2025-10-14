@@ -45,11 +45,11 @@ while True:
         case "4" | "sus":
             skriv_ut_studieplan(studieplan_liste)
         case "5" | "stg":
-            sjekk_studieplan_gyldig(rader)
+            sjekk_studieplan_gyldig()
         case "6" | "lesf":
             lagre_emne_studieplan_fil(studieplan_liste, studiepoeng_liste)
         case "7" | "lin":
-            les_inn()
+            les_inn(rader)
         case "8" | "abort":
             break
         case _:
