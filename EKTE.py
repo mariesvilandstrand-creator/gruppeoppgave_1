@@ -47,7 +47,7 @@ while True:
         case "5" | "stg":
             sjekk_studieplan_gyldig(rader)
         case "6" | "lesf":
-            lagre_emne_studieplan_fil()
+            lagre_emne_studieplan_fil(studieplan_liste, studiepoeng_liste)
         case "7" | "lin":
             les_inn()
         case "8" | "abort":
