@@ -3,9 +3,9 @@
 
 import csv
 
-with open("studieplan_fil.csv", "r") as fila:
+with open("studieplan_fil.csv", "r" , newline="", encoding="utf-8") as fila:
     csvreader = csv.reader(fila)
-rader=list(csvreader)
+    rader=list(csvreader)
 
 for rad in rader:
     if not rad:
