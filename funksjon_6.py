@@ -7,6 +7,7 @@ import csv
 def lagre_emne_studieplan_fil(studieplan_liste, studiepoeng_liste):
     with open ("studieplan_fil.csv", "a", encoding="UTF-8") as fila:
         for i in len(studieplan_liste[i]):
+            
             fila.write(f"1, {studieplan_liste[i][0]}, {studiepoeng_liste[i][0]}")
 
         for i in len(studieplan_liste[i]):
