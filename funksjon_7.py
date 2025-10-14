@@ -6,9 +6,11 @@ import csv
 def lese_fil():
     with open("studeplan_fil.csv", "r") as fila:
         csvreader = csv.reader(fila)
+    t=0
     for row in csvreader:
         if not row:
             continue
-        if row[0].startswith[row+1]:
+        if row[0].startswith[t]:
             print(f"semesteret ditt er: {row[0]}, emnekoden din er {row[1]}, studiepoengene er {row[2]}")
+        t=t+1
             
