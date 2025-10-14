@@ -1,4 +1,7 @@
-print("Hei håper det funker nå")
-print("Yes!!!")
-print("Vet ikke om det funker")
-print("Jo det må funke !!!")
+import csv
+
+with open("studieplan_fil.csv", "r") as fila:
+    csvreader = csv.reader(fila) 
+    
+    for row in csvreader:
+        print(row)
