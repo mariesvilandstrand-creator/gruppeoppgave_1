@@ -4,3 +4,4 @@
 def lagre_emne_studieplan_fil():
     print("...")
     
+with open ("studieplan_fil.csv", "a", encoding="UTF-8") as fila:
