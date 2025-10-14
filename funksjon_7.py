@@ -5,8 +5,40 @@ import csv
 
 with open("studieplan_fil.csv", "r") as fila:
     csvreader = csv.reader(fila)
-    
-    for row in csvreader:
-        if not row:
-            continue
-        print(row)
+rader=list(csvreader)
+
+for rad in rader:
+    if not rad:
+        continue
+    if rad[0]=="1":
+        print(f"{rad[0]} semester, emnekode: {rad[1]}, studiepoeng: {rad[2]}")
+
+for rad in rader:
+    if not rad:
+        continue
+    if rad[0]=="2":
+        print(f"{rad[0]} semester, emnekode: {rad[1]}, studiepoeng: {rad[2]}")
+
+for rad in rader:
+    if not rad:
+        continue
+    if rad[0]=="3":
+        print(f"{rad[0]} semester, emnekode: {rad[1]}, studiepoeng: {rad[2]}")
+
+for rad in rader:
+    if not rad:
+        continue
+    if rad[0]=="4":
+        print(f"{rad[0]} semester, emnekode: {rad[1]}, studiepoeng: {rad[2]}")
+
+for rad in rader:
+    if not rad:
+        continue
+    if rad[0]=="5":
+        print(f"{rad[0]} semester, emnekode: {rad[1]}, studiepoeng: {rad[2]}")
+            
+for rad in rader:
+    if not rad:
+        continue
+    if rad[0]=="6":
+        print(f"{rad[0]} semester, emnekode: {rad[1]}, studiepoeng: {rad[2]}")
