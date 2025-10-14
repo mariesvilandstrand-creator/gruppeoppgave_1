@@ -12,6 +12,8 @@ from funksjon_3 import*
 
 from funksjon_4 import*
 
+from funksjon_7 import*
+
 semester_liste=[]
 emnekode_liste=[]
 studiepoeng_liste=[]
@@ -28,8 +30,6 @@ def sjekk_studieplan_gyldig():
 def lagre_emne_studieplan_fil():
     print("...")
 
-def les_inn():
-    print("...")
         
 while True:
     ip = input("Hva vil du gjøre?").lower().strip()
@@ -43,7 +43,7 @@ while True:
         case "4" | "sus":
             skriv_ut_studieplan(studieplan_liste)
         case "5" | "stg":
-            sjekk_studieplan_gyldig()
+            sjekk_studieplan_gyldig(rader)
         case "6" | "lesf":
             lagre_emne_studieplan_fil()
         case "7" | "lin":
