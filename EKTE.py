@@ -12,6 +12,8 @@ from funksjon_3 import*
 
 from funksjon_4 import*
 
+from funksjon_5 import*
+
 from funksjon_6 import*
 
 from funksjon_7 import*
