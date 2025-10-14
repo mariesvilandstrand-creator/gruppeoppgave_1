@@ -28,7 +28,7 @@ def legg_til_nytt_emne(emnekode_liste, semester_liste, studiepoeng_liste, aarsti
     studiepoeng=int(input("Hvor mange studiepoeng?"))
     
     
-    while studiepoeng>60 or studiepoeng<5:
+    while studiepoeng>30 or studiepoeng<5:
         print("Ugyldig poengsum, prøv igjen")
         studiepoeng=int(input("Hvor mange studiepoeng?"))
     studiepoeng_liste.append(studiepoeng)
