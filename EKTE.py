@@ -12,6 +12,8 @@ from funksjon_3 import*
 
 from funksjon_4 import*
 
+from funksjon_5 import*
+
 from funksjon_6_ny import*
 
 from funksjon_7 import*
@@ -39,7 +41,7 @@ while True:
         case "4" :
             skriv_ut_studieplan(studieplan_liste)
         case "5" :
-            sjekk_studieplan(studieplan_liste, studiepoeng_liste, semester_liste)
+            sjekk_studieplan(studiepoeng_sum)
         case "6" :
             lagre_emne_studieplan_fil(studieplan_liste, studiepoeng_sum)
         case "7" :
