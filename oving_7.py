@@ -6,7 +6,7 @@
 
 from funksjon_1 import*
 
-from funksjon_2 import*
+from ikke_i_bruk_funksjon_2 import*
 
 semester_liste=[]
 emnekode_liste=[]
