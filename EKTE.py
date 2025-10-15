@@ -12,7 +12,7 @@ from funksjon_3 import*
 
 from funksjon_4 import*
 
-from funksjon_6 import*
+from funksjon_6_ny import*
 
 from funksjon_7 import*
 
@@ -41,7 +41,7 @@ while True:
         case "5" :
             sjekk_studieplan(studieplan_liste, studiepoeng_liste, semester_liste)
         case "6" :
-            lagre_emne_studieplan_fil(studieplan_liste, studiepoeng_liste)
+            lagre_emne_studieplan_fil(studieplan_liste, studiepoeng_sum)
         case "7" :
             les_inn()
         case "8" :
@@ -50,3 +50,5 @@ while True:
             print("ugyldig commando:", ip)
 
 print(emnekode_liste)
+print(studiepoeng_liste)
+print(studieplan_liste)
