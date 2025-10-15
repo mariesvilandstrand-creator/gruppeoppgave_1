@@ -10,14 +10,14 @@ def legg_til_nytt_emne(emnekode_liste, semester_liste, studiepoeng_liste, aarsti
     emnekode=input("Hva er emnekoden?")
     
     while len(emnekode) > 6 and len(emnekode)<6:
-        emnekode=input("Hva er emnekoden?\n")
+        emnekode=input("Hva er emnekoden?")
         
     emnekode_liste.append(emnekode)
-    semester=int(input("Hvilket semester er det?\n"))
+    semester=int(input("Hvilket semester er det?"))
     
     while semester>6 or semester<1:
         print("FEIL")
-        semester=int(input("Hvilket semester er det?\n"))
+        semester=int(input("Hvilket semester er det?"))
     semester_liste.append(semester)
     
     
