@@ -33,11 +33,12 @@ def sjekk_studieplan_gyldig():
 
 def lagre_emne_studieplan_fil():
     print("...")
-with open("menyvalg_tekst", "r", encoding="UTF-8") as fila:
-    print(fila)
+
         
 while True:
-    ip = input(f"{print(fila)} Hva vil du gjøre?").lower().strip()
+    with open("menyvalg_tekst", "r", encoding="UTF-8") as fila:
+        print(fila.read())
+    ip = input(f" Hva vil du gjøre?").lower().strip()
     match ip:
         case "1" | "ne":
             legg_til_nytt_emne(emnekode_liste, semester_liste, studiepoeng_liste, aarstid_liste)
