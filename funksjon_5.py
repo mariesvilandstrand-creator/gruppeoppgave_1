@@ -4,5 +4,9 @@
 #semesteret.
 
 
-def sjekk_studieplan(studieplan_liste , studiepoeng_liste):
-    print(...)
+def sjekk_studieplan(studieplan_liste , studiepoeng_sum):
+    for i in range(6):
+        if sum(studiepoeng_sum[i])==30:
+            print(f"Du har lagt til nok emner i faget ditt i semester {i+1}")
+        if sum(studiepoeng_sum[i])<30:
+            print(f"du har lagt til for få emner i semester {i+1}, du må legge til flere!")
