@@ -12,8 +12,6 @@ from funksjon_3 import*
 
 from funksjon_4 import*
 
-from funksjon_5 import*
-
 from funksjon_6 import*
 
 from funksjon_7 import*
@@ -25,12 +23,6 @@ aarstid_liste=[]
 studieplan_liste=[[],[],[],[],[],[]]
 studiepoeng_sum=[[],[],[],[],[],[]]
 
-
-        
-
-
-def lagre_emne_studieplan_fil():
-    print("...")
 
         
 while True:
