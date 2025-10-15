@@ -3,15 +3,8 @@
 #hvilke semestre som ikke er gyldige og hvor mange studiepoeng emner det er i det
 #semesteret.
 
-from funksjon_4 import skriv_ut_studieplan
 
-def sjekk_studieplan_gyldig():
-    gyldig = True
-    for i, sem in enumerate(skriv_ut_studieplan, start=1):
-        total_sp = sum(e["studiepoeng"] for e in sem)
-        if total_sp != 30:
-            print(f"Semester {i} har {total_sp} studiepoeng (skal være 30).")
-            gyldig = False
-    if gyldig:
-        print("Studieplanen er gyldig")
+def sjekk_studieplan(studieplan_liste , studiepoeng_liste):
+    for i in range(len(studieplan_liste)):
+ 
 

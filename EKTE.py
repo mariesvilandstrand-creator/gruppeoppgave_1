@@ -28,8 +28,6 @@ studiepoeng_sum=[[],[],[],[],[],[]]
 
         
 
-def sjekk_studieplan_gyldig():
-    print("...")
 
 def lagre_emne_studieplan_fil():
     print("...")
@@ -40,21 +38,21 @@ while True:
         print(fila.read())
     ip = input(f"Hva vil du gjøre?").lower().strip()
     match ip:
-        case "1" | "ne":
+        case "1" :
             legg_til_nytt_emne(emnekode_liste, semester_liste, studiepoeng_liste, aarstid_liste)
-        case "2" | "lte":
+        case "2" :
             funksjon_2_ny(studieplan_liste, semester_liste, emnekode_liste, studiepoeng_sum, studiepoeng_liste)
-        case "3" | "sul":
+        case "3" :
             skriv_ut_liste(emnekode_liste, semester_liste, studiepoeng_liste)
-        case "4" | "sus":
+        case "4" :
             skriv_ut_studieplan(studieplan_liste)
-        case "5" | "stg":
-            sjekk_studieplan_gyldig()
-        case "6" | "lesf":
+        case "5" :
+            sjekk_studieplan(studieplan_liste, studiepoeng_liste, semester_liste)
+        case "6" :
             lagre_emne_studieplan_fil(studieplan_liste, studiepoeng_liste)
-        case "7" | "lin":
-            les_inn(rader)
-        case "8" | "abort":
+        case "7" :
+            les_inn()
+        case "8" :
             break
         case _:
             print("ugyldig commando:", ip)
