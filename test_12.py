@@ -9,11 +9,11 @@ import csv
 with open("test_1.csv", "w", encoding="UTF-8") as fila:
     skriver=csv.writer(fila)
     for i in range(len(full_liste)):
-        fila.write(f"{str(full_liste[i][0])}\n")
+        fila.write(f"{str(full_liste[i][0])}")
         fila.write(f"{str(full_liste_ok[i][0])}\n")
-        fila.write(f"{str(full_liste[i][1])}\n")
+        fila.write(f"{str(full_liste[i][1])}")
         fila.write(f"{str(full_liste_ok[i][1])}\n")
-        fila.write(f"{str(full_liste[i][2])}\n")
+        fila.write(f"{str(full_liste[i][2])}")
         fila.write(f"{str(full_liste_ok[i][2])}\n")
     
 
