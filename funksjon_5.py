@@ -10,3 +10,4 @@ def sjekk_studieplan(studieplan_liste , studiepoeng_sum):
             print(f"Du har lagt til nok emner i faget ditt i semester {i+1}")
         if sum(studiepoeng_sum[i])<30:
             print(f"du har lagt til for få emner i semester {i+1}, du må legge til flere!")
+            print(f"Du har {sum(studiepoeng_sum[i])} i semester {i+1}")
