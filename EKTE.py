@@ -28,8 +28,6 @@ studiepoeng_sum=[[],[],[],[],[],[]]
 
         
 
-def sjekk_studieplan_gyldig():
-    print("...")
 
 def lagre_emne_studieplan_fil():
     print("...")
@@ -49,7 +47,7 @@ while True:
         case "4" :
             skriv_ut_studieplan(studieplan_liste)
         case "5" :
-            sjekk_studieplan_gyldig()
+            sjekk_studieplan(studieplan_liste, studiepoeng_liste, semester_liste)
         case "6" :
             lagre_emne_studieplan_fil(studieplan_liste, studiepoeng_liste)
         case "7" :
