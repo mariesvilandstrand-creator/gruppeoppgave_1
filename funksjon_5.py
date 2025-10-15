@@ -5,4 +5,4 @@
 
 
 def sjekk_studieplan(studieplan_liste , studiepoeng_liste):
-    for i in range(len(studieplan_liste))
+    print(...)
