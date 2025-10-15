@@ -33,9 +33,10 @@ def sjekk_studieplan_gyldig():
 
 def lagre_emne_studieplan_fil():
     print("...")
-
+f= open("menyvalg_tekst", "r", enocind="UTF-8")
         
 while True:
+    print(f.read())
     ip = input("Hva vil du gjøre?").lower().strip()
     match ip:
         case "1" | "ne":
