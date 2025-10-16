@@ -1,7 +1,8 @@
-Semester, 1, Antall studiepoeng: , 10
+Semester, 1, Antall studiepoeng: , 30
 mat100, studiepoeng: 10 
-Semester, 2, Antall studiepoeng: , 10
-fys200, studiepoeng: 10 
+dat120, studiepoeng: 20 
+Semester, 2, Antall studiepoeng: , 20
+fys200, studiepoeng: 20 
 Semester, 3, Antall studiepoeng: , 0
 Semester, 4, Antall studiepoeng: , 0
 Semester, 5, Antall studiepoeng: , 0
