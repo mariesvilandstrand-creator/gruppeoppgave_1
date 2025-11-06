@@ -1,3 +1,5 @@
+
+
 def emne_i_studieplan(self):
     for i in range (6):
         print (f"\n semester 1: \n {self.emnekode[i]}")
