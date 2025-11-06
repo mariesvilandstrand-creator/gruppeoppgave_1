@@ -23,7 +23,6 @@ def funksjon_2_ny(studieplan_liste, semester_liste, emnekode_liste, studiepoeng_
     student_id.navn = studieplan_navn
     
     
-    
     while True:
         try:
             hvilket_emne=int(input("Hvilket emne vil du legge inn i studieplanen din?(skriv inn tallet i rekken som emnet ditt er i): "))-1
@@ -34,7 +33,12 @@ def funksjon_2_ny(studieplan_liste, semester_liste, emnekode_liste, studiepoeng_
             break
         except ValueError:
             print("FEIL")
-    hvilket_semester=semester_liste[hvilket_emne]-1
+    emne = emnekode_liste[hvilket_emne]
+    
+    semester = emne.semester - 1
+    
+    student_id.emne[semester] =  emne
+
     
     
     
