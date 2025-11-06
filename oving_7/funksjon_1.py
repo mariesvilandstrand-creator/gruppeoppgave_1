@@ -3,7 +3,7 @@
 #semester (høst eller vår) og en for antall studiepoeng, og hvor samme indeks i de tre
 #listene representerer samme emne
 
-from EKTE import*
+from øving7.EKTE import*
 
 
 def legg_til_nytt_emne(emnekode_liste, semester_liste, studiepoeng_liste, aarstid_liste):

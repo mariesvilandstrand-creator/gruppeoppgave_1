@@ -4,9 +4,9 @@
 #listene representerer samme emne
 
 
-from funksjon_1 import*
+from øving7.funksjon_1 import*
 
-from ikke_i_bruk_funksjon_2 import*
+from øving7.ikke_i_bruk_funksjon_2 import*
 
 semester_liste=[]
 emnekode_liste=[]
