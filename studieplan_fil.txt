@@ -1,4 +1,4 @@
-Semester, 1, Antall studiepoeng: , 10
+Semester, 1, Antall studiepoeng: , 30
 mat100, studiepoeng: 10 
 Semester, 2, Antall studiepoeng: , 10
 fys100, studiepoeng: 10 
