@@ -1,4 +1,4 @@
-class Klasse():
+class Emne():
     def __init__(self, navn, emnekode, semester, studiepoeng):
         self.navn = navn
         self.emnekode = emnekode
@@ -10,5 +10,15 @@ class Klasse():
     
 
 class Studieplan():
-    def __init__(self, ID, tittel, s1, s2, s3, s4, s5, s6):
+    def __init__(self, ID, tittel, semester):
+        self.ID = ID
+        self.tittel = tittel
+        self.semester = semester
+        
+    def semester():
+        
+    
+    def __str__(self):
+        return f"\n student-ID : {self.ID} \n tittel : {self.tittel} \n {}"
+        
         
