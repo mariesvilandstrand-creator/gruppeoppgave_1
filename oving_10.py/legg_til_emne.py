@@ -1,7 +1,7 @@
 
 from klasse import*
 
-def legg_til_nytt_emne(emnekode_liste):
+def legg_til_nytt_emne(emnekode_liste, emne_dict):
     
     emnekode = input("Hva er emnekoden?")
     
@@ -27,4 +27,8 @@ def legg_til_nytt_emne(emnekode_liste):
         studiepoeng=int(input("Hvor mange studiepoeng?"))
     
     
-    emnekode = Emne(emne_navn, emnekode, semester, studiepoeng)
+    Fullt_emne = Emne(emne_navn, emnekode, semester, studiepoeng)
+    
+    emne_dict(emne_navn) == Fullt_emne
+    
+    print(emne_dict(emne_navn))
