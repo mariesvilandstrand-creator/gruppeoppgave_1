@@ -21,7 +21,7 @@ while True:
     ip = input(f"Hva vil du gjøre?").lower().strip()
     match ip:
         case "1" :
-            legg_til_nytt_emne(emnekode_liste)
+            legg_til_nytt_emne(emnekode_liste, emne_dict)
         case "2" :
             legg_til_emne_i_studieplan(emnekode_liste, student_id_liste)
         #case "3" :
