@@ -3,7 +3,7 @@ from legg_til_emne import*
 
 from klasse import*
 
-def legg_til_emne_i_studieplan(emnekode_liste, student_id_liste, studieplan_dict):
+def legg_til_emne_i_studieplan(emnekode_liste, student_id_liste, studieplan_dict, emne_dict):
     
     student_id = input("Hva er student-id'en din?")
     
@@ -33,8 +33,9 @@ def legg_til_emne_i_studieplan(emnekode_liste, student_id_liste, studieplan_dict
             
     emne = emnekode_liste[hvilket_emne]
     
+    emne_navn = emne_dict[emne]
     
-    hvilket_semester = emne.semester
+    hvilket_semester = emne_navn.semester_til_emnet
     
     
     #student_id.emne[semester] =  emne // eller denne, uiskker

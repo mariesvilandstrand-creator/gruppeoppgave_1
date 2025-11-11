@@ -15,6 +15,9 @@ class Emne():
     def __str__(self):
         return f"\n navn : {self.navn} \n emnekode : {self.emnekode} \n semester : {self.semester} \n studiepoeng : {self.studiepoeng} \n"
     
+    def semester_til_emnet(self):
+        return self.semester
+    
 
 class Studieplan():
     def __init__(self, ID, navn, studiepoeng, emne):
@@ -25,3 +28,4 @@ class Studieplan():
             
     def __str__(self):
         return f"\n student-ID : {self.ID} \n studie : {self.navn} \n emne :{emne_i_studieplan()} "
+    
