@@ -6,8 +6,8 @@ def fjerne_emne(student_id_liste):
         print(student_id_liste[0].emne)
         hvilket_emne = input(print("Hvilke av disse emnene vil du fjerne? (skriv navnet på faget) :")).lower().strip()
         
-        if hvilket_emne not in student_id_liste[0] #vil skriva en feilkode hvis ikkje emne fins i studieplanen.
-            print("prøv igjen ")
+        #if hvilket_emne not in student_id_liste[0] #vil skriva en feilkode hvis ikkje emne fins i studieplanen.
+         #   print("prøv igjen ")
         
         del student_id_liste[0].hvilket_emne
         
