@@ -16,7 +16,7 @@ emne_dict = {
 }
 
 while True:
-    with open("menyvalg_tekst", "r", encoding="UTF-8") as fila:
+    with open("oving_10.py/menyvalg_tekst", "r", encoding="UTF-8") as fila:
         print(fila.read())
     ip = input(f"Hva vil du gjøre?").lower().strip()
     match ip:
