@@ -27,7 +27,7 @@ def legg_til_nytt_emne(emnekode_liste, emne_dict):
         studiepoeng=int(input("Hvor mange studiepoeng?"))
     
     
-    Fullt_emne = Emne(emne_navn, emne_navn, emnekode, semester, studiepoeng)
+    Fullt_emne = Emne(emne_navn, emnekode, semester, studiepoeng)
     
     emne_dict[emne_navn] = Fullt_emne
     

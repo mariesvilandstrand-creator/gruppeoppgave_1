@@ -33,7 +33,7 @@ def legg_til_emne_i_studieplan(emnekode_liste, student_id_liste, studieplan_dict
             
     emne = emnekode_liste[hvilket_emne]
     
-    emne_navn = emne_dict[emne]
+    emne_navn = emne_dict.get(emne)
     
     hvilket_semester = emne_navn.semester_til_emnet
     
