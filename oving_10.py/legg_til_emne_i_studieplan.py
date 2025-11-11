@@ -1,6 +1,8 @@
 
 from legg_til_emne import*
 
+from klasse import*
+
 def legg_til_emne_i_studieplan(emnekode_liste, student_id_liste):
     
     student_id = input("Hva er student-id'en din?")

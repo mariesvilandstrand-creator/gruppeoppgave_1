@@ -1,5 +1,5 @@
 
-
+from klasse import*
 
 def legg_til_nytt_emne(emnekode_liste):
     
