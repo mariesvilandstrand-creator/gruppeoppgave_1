@@ -1,1 +1,0 @@
-print("Hei jeg heter amalie\n og jeg er 20 år")
