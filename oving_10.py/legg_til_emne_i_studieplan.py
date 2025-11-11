@@ -3,14 +3,17 @@ from legg_til_emne import*
 
 from klasse import*
 
-def legg_til_emne_i_studieplan(emnekode_liste, student_id_liste):
+def legg_til_emne_i_studieplan(emnekode_liste, student_id_liste, studieplan_dict):
     
     student_id = input("Hva er student-id'en din?")
-    student_id.ID = student_id
+    
+    # student_id.ID = student_id // trur ikkje me trrenge dette
+    
     student_id_liste.append(student_id)
     
     studieplan_navn = input("Hvilket studie går du?")
-    student_id.navn = studieplan_navn
+    
+    # student_id.navn = studieplan_navn // eller dette
     
     
     x = 1
@@ -33,7 +36,7 @@ def legg_til_emne_i_studieplan(emnekode_liste, student_id_liste):
     
     semester = emne.semester - 1
     
-    student_id.emne[semester] =  emne
+    #student_id.emne[semester] =  emne // eller denne, uiskker
 
     
     for i in (6):
@@ -53,7 +56,9 @@ def legg_til_emne_i_studieplan(emnekode_liste, student_id_liste):
     if sum(emne.studiepoeng[semester]) <= 60:
         print("\n emnet ditt er nå lagt til i studieplanen din")
     
-    student_id = Studieplan(student_id, studieplan_navn, studiepoeng, emne)
+    Full_studieplan = Studieplan(student_id, studieplan_navn, studiepoeng, emne)
         
-    print(student_id)
+    studieplan_dict[student_id] = Full_studieplan
+    
+    print(studieplan_dict[student_id])
 
