@@ -8,7 +8,7 @@ def emne_i_studieplan(self):
 class Emne():
     def __init__(self, navn, emnekode, semester = 0, studiepoeng = 0):
         self.navn = navn
-        self.emmnekode = emnekode
+        self.emnekode = emnekode
         self.semester = semester
         self.studiepoeng = studiepoeng
 
