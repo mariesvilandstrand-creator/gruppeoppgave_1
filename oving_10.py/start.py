@@ -15,6 +15,11 @@ emne_dict = {
     
 }
 
+studieplan_dict = {
+    
+}
+
+
 while True:
     with open("oving_10.py/menyvalg_tekst", "r", encoding="UTF-8") as fila:
         print(fila.read())
