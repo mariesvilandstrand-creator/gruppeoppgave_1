@@ -8,7 +8,7 @@ def emne_i_studieplan(self):
 class Emne():
     def __init__(self, navn, emnekode, semester = 0, studiepoeng = 0):
         self.navn = navn
-        self.emmnekode = emnekode
+        self.emnekode = emnekode
         self.semester = semester
         self.studiepoeng = studiepoeng
 
@@ -20,8 +20,8 @@ class Studieplan():
     def __init__(self, ID, navn, studiepoeng, emne):
         self.ID = ID
         self.navn = navn
-        self.studiepoeng = [[],[],[],[],[],[]]
-        self.emne = [[],[],[],[],[],[]]
+        self.studiepoeng = studiepoeng [[],[],[],[],[],[]]
+        self.emne = emne [[],[],[],[],[],[]]
             
     def __str__(self):
         return f"\n student-ID : {self.ID} \n studie : {self.navn} \n emne :{emne_i_studieplan()} "
