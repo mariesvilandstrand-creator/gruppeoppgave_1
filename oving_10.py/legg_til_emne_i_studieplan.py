@@ -34,7 +34,8 @@ def legg_til_emne_i_studieplan(emnekode_liste, student_id_liste, studieplan_dict
     emne = emnekode_liste[hvilket_emne]
     
     
-    semester = emne.semester
+    hvilket_semester = emne.semester
+    
     
     #student_id.emne[semester] =  emne // eller denne, uiskker
 
@@ -48,12 +49,12 @@ def legg_til_emne_i_studieplan(emnekode_liste, student_id_liste, studieplan_dict
     
     studiepoeng = emne.studiepoeng
     
-    student_id.studiepoeng[semester].append(studiepoeng)
+    student_id.studiepoeng[hvilket_semester].append(studiepoeng)
     
-    if sum(emne.studiepoeng[semester]) > 60:
+    if sum(emne.studiepoeng[hvilket_semester]) > 60:
         print("Du har lagt til for mange emner")
-        student_id.studiepoeng[semester].remove(studiepoeng)
-    if sum(emne.studiepoeng[semester]) <= 60:
+        student_id.studiepoeng[hvilket_semester].remove(studiepoeng)
+    if sum(emne.studiepoeng[hvilket_semester]) <= 60:
         print("\n emnet ditt er nå lagt til i studieplanen din")
     
     Full_studieplan = Studieplan(student_id, studieplan_navn, studiepoeng, emne)
