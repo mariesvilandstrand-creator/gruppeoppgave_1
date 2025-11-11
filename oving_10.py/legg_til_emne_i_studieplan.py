@@ -34,7 +34,7 @@ def legg_til_emne_i_studieplan(emnekode_liste, student_id_liste, studieplan_dict
     emne = emnekode_liste[hvilket_emne]
     
     
-    semester = int(emne.semester) - 1
+    semester = emne.semester
     
     #student_id.emne[semester] =  emne // eller denne, uiskker
 

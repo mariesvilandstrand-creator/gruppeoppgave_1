@@ -31,4 +31,11 @@ def legg_til_nytt_emne(emnekode_liste, emne_dict):
     
     emne_dict[emne_navn] = Fullt_emne
     
+    
+    # trudde eg trengte dette for å putta dei inn som objekt
+    #emnekode.emne_navn = emne_navn
+    #emnekode.emnekode = emnekode
+    #emnekode.semester = semester
+    #emnekode.studiepoeng = studiepoeng
+    
     print(emne_dict[emne_navn])
