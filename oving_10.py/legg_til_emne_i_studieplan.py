@@ -55,9 +55,10 @@ def legg_til_emne_i_studieplan(emnekode_liste, student_id_liste, studieplan_dict
     
     studiepoeng = emne.studiepoeng
     
-    Studieplan(student_id, studieplan_navn, studiepoeng, emne)
+    student = Studieplan(student_id, studieplan_navn, studiepoeng, emne)
     
-    student_id.semester[hvilket_semester].append(emne)
+    
+    student.semester[hvilket_semester].append(emne)
     
     if sum(emne.studiepoeng[hvilket_semester]) > 60:
         print("Du har lagt til for mange emner")
