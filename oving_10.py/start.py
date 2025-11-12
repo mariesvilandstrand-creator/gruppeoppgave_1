@@ -33,7 +33,6 @@ while True:
             legg_til_nytt_emne(emnekode_liste, emne_dict)
         case "2" :
             lage_tom_studieplan(studieplan_liste)
-            print(studieplan_liste)
         case "3" :
             legg_til_emne_i_studieplan(emnekode_liste, studieplan_liste, emne_dict)
         #case "4" :
