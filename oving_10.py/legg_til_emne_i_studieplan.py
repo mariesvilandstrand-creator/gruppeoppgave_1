@@ -8,7 +8,9 @@ def legg_til_emne_i_studieplan(emnekode_liste, studieplan_liste, emne_dict):
     for i, studieplan in enumerate(studieplan_liste):
         print (i, ":", studieplan)
     
-    tall = int(input("Hvilken studieplan vil du legge emne til i?")) - 1
+    print(studieplan_liste)
+    
+    tall = int(input("Hvilken studieplan vil du legge emne til i?"))
     
     hvilken_studieplan = studieplan_liste[tall]
 
