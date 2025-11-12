@@ -3,19 +3,19 @@
 #semester (høst eller vår) og en for antall studiepoeng, og hvor samme indeks i de tre
 #listene representerer samme emne
 
-from øving7.funksjon_1 import*
+from oving_7.funksjon_1 import*
 
-from øving7.funksjon_2_ny import*
+from oving_7.funksjon_2_ny import*
 
-from øving7.funksjon_3 import*
+from oving_7.funksjon_3 import*
 
-from øving7.funksjon_4 import*
+from oving_7.funksjon_4 import*
 
-from øving7.funksjon_5 import*
+from oving_7.funksjon_5 import*
 
-from øving7.funksjon_6_ny import*
+from oving_7.funksjon_6_ny import*
 
-from øving7.funksjon_7 import*
+from oving_7.funksjon_7 import*
 
 def emne_i_studieplan(self):
     for i in range (6):
