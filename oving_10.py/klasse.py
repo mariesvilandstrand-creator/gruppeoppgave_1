@@ -24,6 +24,13 @@ class Studieplan():
         self.ID = ID
         self.navn = navn
         self.emner = emner 
+        
+    
+    def legg_til_emne(self, emne):
+        if emne in self.emner:
+            return
+        
+        self.emner.append(emne)
             
     def __str__(self):
         return f"\n student-ID : {self.ID} \n studie : {self.navn} \n emne :{emne_i_studieplan()} "

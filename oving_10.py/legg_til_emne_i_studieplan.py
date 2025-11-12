@@ -3,16 +3,19 @@ from legg_til_emne import*
 
 from klasse import*
 
-def legg_til_emne_i_studieplan(emnekode_liste, student_id_liste, emne_dict):
+def legg_til_emne_i_studieplan(emnekode_liste, studieplan_liste, emne_dict):
     
-    student_id = input("Hva er student-id'en din?")
+    for i, studieplan in enumerate(studieplan_liste):
+        print (i, ":", studieplan)
+    
+    tall = int(input("Hvilken studieplan vil du legge emne til i?")) - 1
+    
+    hvilken_studieplan = studieplan_liste[tall]
 
     
     # student_id.ID = student_id // trur ikkje me trrenge dette
     
-    student_id_liste.append(student_id)
-    
-    studieplan_navn = input("Hvilket studie går du?")
+
     
     # student_id.navn = studieplan_navn // eller dette
     
@@ -34,38 +37,11 @@ def legg_til_emne_i_studieplan(emnekode_liste, student_id_liste, emne_dict):
             
     emne = emne_dict.get(emnekode_liste[hvilket_emne])
 
+    hvilken_studieplan.legg_til_emne(emne)
     
    # emne_navn = emne_dict.get(emne)
-    
-    hvilket_semester = emne.semester
     
     
     #student_id.emne[semester] =  emne // eller denne, uiskker
 
     
-    for i in range(6):
-        if emne in studieplan_dict[student_id]:
-            print("Du har allerede dette emnet i studieplanen din!")
-            return
-        else:
-            continue
-    
-    studiepoeng = emne.studiepoeng
-    
-    student = Studieplan(student_id, studieplan_navn, studiepoeng, emne)
-    
-    
-    student.semester[hvilket_semester].append(emne)
-    
-    if sum(emne.studiepoeng[hvilket_semester]) > 60:
-        print("Du har lagt til for mange emner")
-        student_id.studiepoeng[hvilket_semester].remove(studiepoeng)
-    if sum(emne.studiepoeng[hvilket_semester]) <= 60:
-        print("\n emnet ditt er nå lagt til i studieplanen din")
-    
-    Full_studieplan = Studieplan(student_id, studieplan_navn, studiepoeng, emne)
-        
-    studieplan_dict[student_id] = Full_studieplan
-    
-    print(studieplan_dict[student_id])
-
