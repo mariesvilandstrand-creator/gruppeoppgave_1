@@ -34,7 +34,7 @@ while True:
         case "2" :
             lage_tom_studieplan(studieplan_liste)
         case "3" :
-            legg_til_emne_i_studieplan(emnekode_liste, semester_liste, studiepoeng_liste)
+            legg_til_emne_i_studieplan(emnekode_liste, student_id_liste, emne_dict)
         #case "4" :
          #   skriv_ut_studieplan(studieplan_liste)
         #case "5" :

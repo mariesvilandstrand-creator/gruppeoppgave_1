@@ -3,13 +3,10 @@ from legg_til_emne import*
 
 from klasse import*
 
-def legg_til_emne_i_studieplan(emnekode_liste, student_id_liste, studieplan_dict, emne_dict):
+def legg_til_emne_i_studieplan(emnekode_liste, student_id_liste, emne_dict):
     
     student_id = input("Hva er student-id'en din?")
-    
-    if student_id not in studieplan_dict:
-        studieplan_dict[student_id] = [],[],[],[],[],[]
-    
+
     
     # student_id.ID = student_id // trur ikkje me trrenge dette
     
