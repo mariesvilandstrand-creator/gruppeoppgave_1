@@ -35,7 +35,7 @@ def legg_til_emne_i_studieplan(emnekode_liste, student_id_liste, studieplan_dict
     
    # emne_navn = emne_dict.get(emne)
     
-    hvilket_semester = emne.semester
+    hvilket_semester = emne.semester #str object has no attribute semester
     
     
     #student_id.emne[semester] =  emne // eller denne, uiskker
