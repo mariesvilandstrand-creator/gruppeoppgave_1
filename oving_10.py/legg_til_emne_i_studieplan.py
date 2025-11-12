@@ -7,6 +7,10 @@ def legg_til_emne_i_studieplan(emnekode_liste, student_id_liste, studieplan_dict
     
     student_id = input("Hva er student-id'en din?")
     
+    if student_id not in studieplan_dict:
+        studieplan_dict[student_id] = [],[],[],[],[],[]
+    
+    
     # student_id.ID = student_id // trur ikkje me trrenge dette
     
     student_id_liste.append(student_id)
@@ -31,18 +35,19 @@ def legg_til_emne_i_studieplan(emnekode_liste, student_id_liste, studieplan_dict
         except ValueError:
             print("FEIL")
             
-    emne = emnekode_liste[hvilket_emne]
+    emne = emne_dict.get(emnekode_liste[hvilket_emne])
+
     
    # emne_navn = emne_dict.get(emne)
     
-    hvilket_semester = emne.semester #str object has no attribute semester
+    hvilket_semester = emne.semester
     
     
     #student_id.emne[semester] =  emne // eller denne, uiskker
 
     
-    for i in (6):
-        if emne in emne.emne[i]: #prøve å finna ud om emne ligge i listå emne.emne
+    for i in range(6):
+        if emne in studieplan_dict[student_id]:
             print("Du har allerede dette emnet i studieplanen din!")
             return
         else:
@@ -50,7 +55,9 @@ def legg_til_emne_i_studieplan(emnekode_liste, student_id_liste, studieplan_dict
     
     studiepoeng = emne.studiepoeng
     
-    student_id.studiepoeng[hvilket_semester].append(studiepoeng)
+    Studieplan(student_id, studieplan_navn, studiepoeng, emne)
+    
+    student_id.semester[hvilket_semester].append(emne)
     
     if sum(emne.studiepoeng[hvilket_semester]) > 60:
         print("Du har lagt til for mange emner")
