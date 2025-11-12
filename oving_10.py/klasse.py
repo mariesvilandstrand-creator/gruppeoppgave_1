@@ -20,11 +20,10 @@ class Emne():
     
 
 class Studieplan():
-    def __init__(self, ID, navn, studiepoeng, emne):
+    def __init__(self, ID, navn, emner = list()):
         self.ID = ID
         self.navn = navn
-        self.studiepoeng =  [[],[],[],[],[],[]]
-        self.emne =  [[],[],[],[],[],[]]
+        self.emner = emner 
             
     def __str__(self):
         return f"\n student-ID : {self.ID} \n studie : {self.navn} \n emne :{emne_i_studieplan()} "
