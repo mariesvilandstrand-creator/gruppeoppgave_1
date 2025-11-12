@@ -3,7 +3,6 @@
 #semester (høst eller vår) og en for antall studiepoeng, og hvor samme indeks i de tre
 #listene representerer samme emne
 
-
 from øving7.funksjon_1 import*
 
 from øving7.funksjon_2_ny import*
