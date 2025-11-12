@@ -29,7 +29,7 @@ def legg_til_nytt_emne(emnekode_liste, emne_dict):
     
     Fullt_emne = Emne(emne_navn, emnekode, semester, studiepoeng) #koss vett eg ke me ska bruga som self??
     
-    emne_dict[emne_navn] = Fullt_emne
+    emne_dict[emnekode] = Fullt_emne
     
     
     # trudde eg trengte dette for å putta dei inn som objekt
@@ -38,4 +38,4 @@ def legg_til_nytt_emne(emnekode_liste, emne_dict):
     #emnekode.semester = semester
     #emnekode.studiepoeng = studiepoeng
     
-    print(emne_dict[emne_navn])
+    print(emne_dict[emnekode])
