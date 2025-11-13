@@ -17,6 +17,10 @@ from skrive_ut_studieplan import*
 
 from gyldig_studieplan import*
 
+from sjekk_hvilke_studieplan_emne import*
+
+from legge_i_fil import*
+
 emnekode_liste = []
 
 student_id_liste = []
@@ -51,7 +55,7 @@ while True:
            skrive_ut_studieplan(studieplan_liste,)
         case "7" :
             gyldig_studieplan(studieplan_liste, emne_dict)
-        #case "8" :
-         #   break
-        #case _:
-           # print("ugyldig commando:", ip)
+        case "8" :
+            sjekk_emne_i_studieplan(emnekode_liste, emne_dict, studieplan_liste)
+        case "9":
+           lagre_emne_studieplan_fil(studieplan_liste)

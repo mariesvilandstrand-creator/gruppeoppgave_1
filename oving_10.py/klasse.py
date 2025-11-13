@@ -18,12 +18,10 @@ class Emne():
     
 
 class Studieplan():
-    def __init__(self, ID, navn, semester = list(), emner = list()):
+    def __init__(self, ID, navn, emner = [[] for _ in range(6)]):
         self.ID = ID
         self.navn = navn
         self.emner = emner 
-        for i in range(6):
-            self.emner.append(list())
         
     
     def legg_til_emne(self, emne, semesterNr):
@@ -69,7 +67,12 @@ class Studieplan():
         if not gyldig:
             print("Studieplanen er ikke gyldig!")
 
-            
+        
+    def sjekk_om_emne_i_studieplan(self, emne):
+        for semester in self.emner:
+            if emne in semester:
+                return True
+        return False
             
             
     def __str__(self):

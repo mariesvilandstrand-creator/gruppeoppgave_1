@@ -1,0 +1,81 @@
+ID:1234
+studie:petroleum
+Semester 1:
+mat100
+
+Semester 2:
+fys100
+
+Semester 3:
+
+Semester 4:
+
+Semester 5:
+
+Semester 6:
+
+Semester 7:
+
+Semester 8:
+
+Semester 9:
+
+Semester 10:
+
+Semester 11:
+
+Semester 12:
+ID:0
+studie:elektro
+Semester 1:
+mat100
+
+Semester 2:
+fys100
+
+Semester 3:
+
+Semester 4:
+
+Semester 5:
+
+Semester 6:
+
+Semester 7:
+
+Semester 8:
+
+Semester 9:
+
+Semester 10:
+
+Semester 11:
+
+Semester 12:
+ID:0
+studie:elektro
+Semester 1:
+mat100
+
+Semester 2:
+fys100
+
+Semester 3:
+
+Semester 4:
+
+Semester 5:
+
+Semester 6:
+
+Semester 7:
+
+Semester 8:
+
+Semester 9:
+
+Semester 10:
+
+Semester 11:
+
+Semester 12:

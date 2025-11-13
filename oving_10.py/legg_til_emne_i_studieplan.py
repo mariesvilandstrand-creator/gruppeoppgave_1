@@ -6,9 +6,9 @@ from klasse import*
 def legg_til_emne_i_studieplan(emnekode_liste, studieplan_liste, emne_dict):
     
     for (i, studieplan) in enumerate(studieplan_liste):
-       print(i, ":", studieplan)
+       print(i, ":", studieplan.ID, ":", studieplan.navn)
         
-    tall = int(input("Hvilken studieplan vil du legge emne til i?"))
+    tall = int(input("\nHvilken studieplan vil du legge emne til i?"))
     
     hvilken_studieplan = studieplan_liste[tall]
     
@@ -20,7 +20,7 @@ def legg_til_emne_i_studieplan(emnekode_liste, studieplan_liste, emne_dict):
     
     while True:
         try:
-            hvilket_emne = int(input("Hvilket emne vil du legge inn i studieplanen din?: ")) - 1
+            hvilket_emne = int(input("\nHvilket emne vil du legge inn i studieplanen din?: ")) - 1
             if hvilket_emne > len(emnekode_liste) :
                 print("feil")
                 continue
@@ -30,7 +30,7 @@ def legg_til_emne_i_studieplan(emnekode_liste, studieplan_liste, emne_dict):
             
     emne = emne_dict.get(emnekode_liste[hvilket_emne])
     
-    semester = int(input("Hvilket semester: ")) - 1
+    semester = int(input("\nHvilket semester: ")) - 1
 
     hvilken_studieplan.legg_til_emne(emne, semester)
     
