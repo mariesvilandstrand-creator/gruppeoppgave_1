@@ -9,6 +9,14 @@ from fjerne_emne import*
 
 from lage_tom_studieplan import*
 
+from fjerne_emne import*
+
+from liste_over_emne import*
+
+from skrive_ut_studieplan import*
+
+from gyldig_studieplan import*
+
 emnekode_liste = []
 
 student_id_liste = []
@@ -35,14 +43,14 @@ while True:
             lage_tom_studieplan(studieplan_liste)
         case "3" :
             legg_til_emne_i_studieplan(emnekode_liste, studieplan_liste, emne_dict)
-        #case "4" :
-         #   skriv_ut_studieplan(studieplan_liste)
-        #case "5" :
-         #   sjekk_studieplan(studiepoeng_sum)
-        #case "6" :
-         #   lagre_emne_studieplan_fil(studieplan_liste, studiepoeng_sum)
-        #case "7" :
-         #   les_inn()
+        case "4" :
+            fjerne_emne_fra_studieplan(emnekode_liste, studieplan_liste, emne_dict)
+        case "5" :
+            liste_over_emne(emnekode_liste)
+        case "6" :
+           skrive_ut_studieplan(studieplan_liste,)
+        case "7" :
+            gyldig_studieplan(studieplan_liste, emne_dict)
         #case "8" :
          #   break
         #case _:
