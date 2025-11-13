@@ -11,13 +11,6 @@ def legg_til_emne_i_studieplan(emnekode_liste, studieplan_liste, emne_dict):
     tall = int(input("Hvilken studieplan vil du legge emne til i?"))
     
     hvilken_studieplan = studieplan_liste[tall]
-
-    
-    # student_id.ID = student_id // trur ikkje me trrenge dette
-    
-
-    
-    # student_id.navn = studieplan_navn // eller dette
     
     
     x = 1
@@ -37,13 +30,7 @@ def legg_til_emne_i_studieplan(emnekode_liste, studieplan_liste, emne_dict):
             
     emne = emne_dict.get(emnekode_liste[hvilket_emne])
     
-    semester = int(input("Hvilket semester: "))
+    semester = int(input("Hvilket semester: ")) - 1
 
     hvilken_studieplan.legg_til_emne(emne, semester)
-    
-   # emne_navn = emne_dict.get(emne)
-    
-    
-    #student_id.emne[semester] =  emne // eller denne, uiskker
-
     
